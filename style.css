@@ -14,8 +14,7 @@ body {
     position: relative;
     margin: 0;
     padding-bottom: 100px; 
-
-
+    text-align: center;
 }
 .txt{
     color: #FFD4D3;
@@ -50,24 +49,42 @@ a:link,a:visited,a:hover,a:active {
   }
 
 
-#overlay{
-    text-align: center;
-    padding: 45px 0 66px 0;
-    opacity: 0;
-    -webkit-transition: opacity 0.25s ease;
+/*#overlay{
+    
+   /* padding: 45px 0 66px 0;*/
+    
+  /*  -webkit-transition: opacity 0.25s ease;
     color:#E1C1AA ;
     bottom: 0; 
     margin:auto;
     width: 300px;
     padding-top: 75%;
-    
-    
-    
 }
+
+
+
 #na:hover #overlay{
     opacity: 1;
     
     
+}*/
+
+figure{
+    position: relative;
+    display: inline-block; 
+}
+figcaption{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    right: 0;
+    text-align: center;
+    color:#E1C1AA;
+    
+}
+figure:hover figcaption {
+    display: block;
 }
 
 #na:hover{
@@ -76,19 +93,21 @@ a:link,a:visited,a:hover,a:active {
     
     /*-webkit-transition: 0.4s ease-in;*/
     box-shadow: inset 1px 1px 80px 0 rgba(0, 0, 0, 0.45);
-}
-#na{
-    background-image: url("images/slowrush.jpeg");
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 600px;
-    border: 1px solid #FFD4D3;
-    -webkit-transition: 0.12s ease-in;
-    overflow: hidden;
+    filter: blur(3px);
+    
     
 }
+#na{
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    
+    -webkit-transition: 0.12s ease-in;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 footer{
     /*background-color: #A80300;*/
